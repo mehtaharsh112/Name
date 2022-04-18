@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            padding: 20px 50px;
+        }
+
+        .d-flex
+        {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            padding-top: 20px;
+        }
+
+        .nav-bar
+        {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <p>Welcome , <span id="Fname"></span></p>
+        <p>Contact Number : - <span id="Mnum"></span></p>
+    </div>
+    <form action="" class="d-flex">
+        <input type="text" placeholder="First Name" id="fname">
+        <input type="number" placeholder="Mobile Number" id="mnum">
+        
+    </form>
+    <button onclick="clickw()">SUBMIT</button>
+    <!-- <script src="index.js"></script> -->
+
+    <script>
+        // import fname from "index.js";
+        function clickw()
+        {
+            document.getElementById('Fname').innerHTML = fname.value;
+            document.getElementById('Mnum').innerHTML = mnum.value;
+            document.getElementById('fname').value = "";
+            document.getElementById('mnum').value = "";
+        }
+    </script>
+</body>
+
+</html>
